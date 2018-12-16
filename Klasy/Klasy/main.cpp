@@ -14,9 +14,14 @@ int main()
 	ptr->imie = "Reks";
 	ptr->barwa = "Bialy";
 
+	Pies labrador("Czarny", 100);
+	Pies wilk(husky);
+	
+
 	burek.spaceruj();
 	ptr->spaceruj();
 	std::cout << "Husky ma " << husky.ileEnergi() << " energi\n";
+	std::cout << "Wilk ma " << wilk.ileEnergi() << " energi\n";
 
 	system("PAUSE");
 	return 0;

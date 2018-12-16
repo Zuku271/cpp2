@@ -3,8 +3,16 @@
 Pies::Pies() : energia(50) {}
 
 Pies::Pies(unsigned int energia_poczatkowa)
-	: energia(energia_poczatkowa)
+	: energia(energia_poczatkowa) {}
+
+Pies::Pies(const std::string & _barwa, unsigned int energia_poczatkowa)
+	: barwa(_barwa), energia(energia_poczatkowa) {}
+
+Pies::Pies(const Pies & t)
 {
+	imie = t.imie;
+	barwa = t.barwa;
+	energia = t.energia + 3;
 }
 
 
