@@ -7,10 +7,10 @@ class Pies
 public:
 	std::string imie;
 	std::string barwa;
+	unsigned int energia;
 
-	
+	Pies();
+	Pies(unsigned int energia_poczatkowa);
 	void spaceruj();
-	void jedz();
-private:
-	Pies() = default;
+	void jedz();	
 };

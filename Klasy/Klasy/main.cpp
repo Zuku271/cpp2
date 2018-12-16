@@ -6,6 +6,7 @@ int main()
 	Pies wilczur;
 	Pies burek = Pies();
 	Pies *ptr = new Pies();
+	Pies husky(70);
 
 	burek.imie = "Burek";
 	burek.barwa = "Bury";

@@ -1,6 +1,12 @@
 #include "Klasy.h"
 
-//Pies::Pies(const std::string & _imie) : imie(_imie) {}
+Pies::Pies() {}
+
+Pies::Pies(unsigned int energia_poczatkowa)
+	: energia(energia_poczatkowa)
+{
+}
+
 
 void Pies::spaceruj()
 {
