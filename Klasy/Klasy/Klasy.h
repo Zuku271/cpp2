@@ -12,5 +12,6 @@ public:
 	Pies();
 	Pies(unsigned int energia_poczatkowa);
 	void spaceruj();
-	void jedz();	
+	void jedz();
+	unsigned int ileEnergi();
 };

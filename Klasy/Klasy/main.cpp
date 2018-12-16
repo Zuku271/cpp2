@@ -16,6 +16,7 @@ int main()
 
 	burek.spaceruj();
 	ptr->spaceruj();
+	std::cout << "Husky ma " << husky.ileEnergi() << " energi\n";
 
 	system("PAUSE");
 	return 0;

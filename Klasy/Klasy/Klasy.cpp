@@ -1,6 +1,6 @@
 #include "Klasy.h"
 
-Pies::Pies() {}
+Pies::Pies() : energia(50) {}
 
 Pies::Pies(unsigned int energia_poczatkowa)
 	: energia(energia_poczatkowa)
@@ -10,10 +10,17 @@ Pies::Pies(unsigned int energia_poczatkowa)
 
 void Pies::spaceruj()
 {
-	std::cout << imie << " spacer\n";
+	energia = energia - 1;
+	std::cout << imie << " spaceruje (energia: " << energia << ")\n";
 }
 
 void Pies::jedz()
 {
-	std::cout << imie << " jedz\n";
+	energia = energia + 1;
+	std::cout << imie << " je (energia: " << energia << ")\n";
+}
+
+unsigned int Pies::ileEnergi()
+{
+	return energia;
 }
