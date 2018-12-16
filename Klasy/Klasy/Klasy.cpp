@@ -1,6 +1,6 @@
 #include "Klasy.h"
 
-Pies::Pies(const std::string & _imie) : imie(_imie) {}
+//Pies::Pies(const std::string & _imie) : imie(_imie) {}
 
 void Pies::spaceruj()
 {

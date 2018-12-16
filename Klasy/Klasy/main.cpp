@@ -3,13 +3,18 @@
 
 int main()
 {
-	Pies jamnik("A");
-	Pies wilczur("B");
+	Pies wilczur;
+	Pies burek = Pies();
+	Pies *ptr = new Pies();
 
-	std::cout << jamnik.imie << " " << wilczur.imie << '\n';
-	jamnik.spaceruj();
-	wilczur.spaceruj();
-	jamnik.jedz();
+	burek.imie = "Burek";
+	burek.barwa = "Bury";
+
+	ptr->imie = "Reks";
+	ptr->barwa = "Bialy";
+
+	burek.spaceruj();
+	ptr->spaceruj();
 
 	system("PAUSE");
 	return 0;

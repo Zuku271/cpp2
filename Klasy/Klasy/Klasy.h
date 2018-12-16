@@ -6,8 +6,9 @@ class Pies
 {
 public:
 	std::string imie;
+	std::string barwa;
 
-	Pies(const std::string &_imie);
+	Pies() = default;
 	void spaceruj();
 	void jedz();
 };
