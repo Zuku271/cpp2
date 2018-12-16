@@ -10,7 +10,7 @@ Pies::Pies(const std::string & _barwa, unsigned int energia_poczatkowa)
 
 Pies::Pies(const Pies & t)
 {
-	imie = t.imie;
+	imie = t.imie + "_2";
 	barwa = t.barwa;
 	energia = t.energia + 3;
 }
