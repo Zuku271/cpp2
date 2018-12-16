@@ -8,7 +8,9 @@ public:
 	std::string imie;
 	std::string barwa;
 
-	Pies() = default;
+	
 	void spaceruj();
 	void jedz();
+private:
+	Pies() = default;
 };
